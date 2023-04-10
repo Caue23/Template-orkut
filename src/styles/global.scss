@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background:  linear-gradient(119.81deg, #B7D5FC 25.3%, #FF95CE 159.93%);
+    --background-200:  linear-gradient(119.81deg, #9dc4f8 25.3%, #f572b8 159.93%);
+    --white: #ffffff;
+    --white-100: #F4F4F4;
+    --white-150: #FDFEFF;
+
+    --gray-100: #e1e1e6;
+    --gray-200: #C0C0C0;
+    --gray-300: #9F9F9F;
+    --gray-500: #4E4E4E;
+    --gray-650: #4B4B4B;
+    --gray-680: #3B3B3B;
+    --gray-700: #2A2A2A;
+    --gray-800: #222222;
+
+    --pink-400: #ED2590;
+    --blue-700: #041E50;
+    --blue-100:  #EFF3F8;
+    ;
+
+}
+
+body{
+    background: var(--background);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body, textarea, select, button {
+    font: 400 1rem "Poppins", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+    body{
+        height: 100vh;
+
+    }
+}

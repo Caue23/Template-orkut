@@ -1,0 +1,138 @@
+.container{
+    display: flex;
+    background:var(--white);
+    height: 92px;
+
+    img{
+        width: 132px;
+        height: 39px;  
+        align-self: center;
+
+        margin: 0 0 0 4rem;
+    }
+
+    ul{
+        display: flex;
+        width: 650px;
+        height: 24px;
+
+        align-self: center;
+        list-style-type: none;
+    }
+    li{
+        margin: 0.5rem 1.3rem 0 1.3rem;
+        text-decoration: none;
+    }
+    a{
+        font-size: 16px;
+        text-decoration: none;
+        color: var(--gray-650);
+    }
+    section{
+        display: flex;
+    }
+    input{
+        width: 300px;
+        height: 44px;
+
+        background-image: url('../../../public/images/lupa.png');
+        background-repeat: no-repeat;
+        background-color: var(--blue-100);
+        background-position: left;
+        background-position-x: 1rem;
+
+        text-align-last: center;
+
+        border-radius: 10px;
+        border: 1px solid var(--blue-100);
+        align-self: center;
+    }
+}
+.users{
+    display: flex;
+    width: 165px;
+    position: relative;
+    cursor: pointer;
+    img{
+        width:42px;
+        height: 42px;
+        margin: 0 0 0 1rem;
+        border-radius: 50%
+    }
+    a{
+        margin: 0 1rem;
+        align-self: center;
+        font-size: 12px;
+    }
+}
+
+.dropdown{
+    position: relative;
+    cursor: pointer;
+}
+.dropdown > a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dropdown > a > img{ 
+    width: 20px;
+
+    margin: 0 ;
+}
+
+.dropdown:hover .menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > a {
+    font-size: 14px;
+    padding:12px 20px;
+}
+.menu > button {
+    padding:12px 20px;
+}
+
+.menu > a:hover{
+    background: var(--background-200);
+}
+.menu > button:hover{
+    background: var(--background-200);
+}
+
+.menu{
+    position: absolute;
+    top:60px;
+    right: -20px;
+    display: grid;
+    width: 100px;
+    padding: 8px 0;
+    background: var(--background);
+    border: 1px solid var(--gray-300);
+    border-radius:10px;
+    box-shadow: 0 40px 40px rgba(0 0 0 /6%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+
+    button{
+        font-size: 14px;
+        background: var(--background);
+        border: 1px solid var(--background);
+        color: var(--gray-650);
+
+    }
+}
+.menu::before{
+    content:"";
+    background:var(--background);
+    border-top: 1px solid var(--background);
+    border-right: 1px solid var(--background);
+    margin-top:-15px;
+    margin-left: 63px;
+    width:12px;
+    height: 12px;
+    rotate:-45deg;
+
+}
