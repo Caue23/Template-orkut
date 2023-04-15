@@ -8,6 +8,7 @@ export  const Home = () =>{
     const {singOut, user} = useContext(AuthGoogleContext);
     const name = JSON.stringify(user)
     const objeto = JSON.parse(name)
+    console.log(objeto)
     return(
         <div> 
             <nav className={styles.container}>
@@ -45,9 +46,6 @@ export  const Home = () =>{
                         <img src='../../images/down.svg'/>
                     </a>
                     <article className={styles.menu}>
-                        <a>discover</a>
-                        <a>discover</a>
-                        <a>discover</a>
                         <button onClick={()=> singOut()}>Sair</button>
                     </article>
                 </section>

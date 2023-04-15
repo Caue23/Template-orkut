@@ -15,7 +15,7 @@ export default function Structure () {
                     <p>{objeto.displayName}</p>
                 </li>
                 <li>
-                    <p>masculino, solteiro</p>
+                    <p>masculino, casado</p>
                 </li>
                 <li>
                 <p>Brasil</p>
@@ -48,71 +48,133 @@ export default function Structure () {
                 <main className={styles.mains}>
                     <h3>Inicio > Perfil</h3>
                     <p>{objeto.displayName}</p>
-                    <input/>
+                    <input type="text"/>
                     <span>
-                        <img src='../../../images/fãs.png'/>
+                        <img src='../../../images/fãs.png' data-type="destacada"/>
                     </span>
                     <span>
-                        <a>Confiável</a>
-                        <img/>
+                        <img src='../../../images/confiavel.png' data-type="normal"/>
                     </span>
                     <span>
-                        <a>Legal</a>
-                        <img/>
+                        <img src='../../../images/legal.png' data-type="normal"/>
                     </span>
                     <span>
-                        <a>Sexy</a>
-                        <img/>
+                        <img src='../../../images/sexy.png' data-type="normal"/>
                     </span>
-                    <ul>
+                    <ul data-type="groupNormal">
                         <li>
-                            relacionamento
-                            <a>Solteiro</a>
+                            <p>Relacionamento</p>
+                            <a>Casado</a>
                         </li>
                         <li>
-                            quem sou eu
-                            <a>Apenas um garoto emo em busca de pessoas para compartilhar arte e músicas :3</a>
+                            <p>Quem sou eu</p>
+                            <textarea maxLength={98} type="text" placeholder="Digite aqui"/>
                         </li>
                         <li>
-                            país
+                            <p>País</p>
                             <a>Brasil</a>
                         </li>
                         <li>
-                            musica
-                            <text>Mr. Kitty</text>
-                            <text>Molchat Doma</text>
-                            <text>Blink-182</text>
-                            <text>Mäneskin</text>
-                            <text>Alissic</text>
-                            <text>Grimes</text>
-                            <text>Motorama</text>
-                            <text>IC3PEAK</text>
+                            <p>Musica</p>
+                            <text>Raça negra</text>
+                            <text>Soweto</text>
+                            <text>Exaltasamba</text>
                         </li>
                         <li>
-                            filmes
-                            <text>Noiva Cadáver</text>
-                            <text>Pulp Fiction</text>
-                            <text>Sweeney Todd</text>
+                            <p>Filmes</p>
+                            <text>Bad Boys</text>
+                            <text>Matrix</text>
+                            <text>A Família Addams</text>
                         </li>
                         <li>
-                            livros
-                            <text>Fausto - Goethe</text>
-                            <text>Divina Comédia - Dante</text>
+                            <p>Livros</p>
+                            <text>Harry Potter</text>
+                            <text>Senhor dos aneis </text>
                         </li>
                     </ul>
                     
                 </main>
                 <article>
+                    <h2>Depoimentos(39)</h2>
+                    <span>
+                            <img src='../../../images/naldo2.png'/>
+                            <ul className={styles.depoiments}>
+                                <li>
+                                    <h3>Naldo Benny</h3>
+                                    <p>Vou te levar num lugar especial, para pessoas especiais.</p>
+                                </li>
+                            </ul>
+                    </span>
 
                 </article>
             </section>
-            <section>
+            <section className={styles.friends}>
                 <aside>
-
+                    <h2>Amigos (800)</h2>
+                    <p>Ver todos</p>
                 </aside>
-                <aside>
-
-                </aside>
+                <ul>
+                    <li>
+                        <img src='../../../images/naldo2.png'/>
+                        <a>Naldo Benny</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/chris.jfif'/>
+                        <a>Chris Brown</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/lebron.png'/>
+                        <a>Lebron James</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src='../../../images/terry.jfif'/>
+                        <a>Terry Crews</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/neymar.jfif'/>
+                        <a>Neymar Jr</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/ronaldinho.jpg'/>
+                        <a>Ronaldinho</a>
+                    </li>
+                </ul>
+                <section className={styles.comunity}>
+                    <aside >
+                    <h2>Comunidades (56)</h2>
+                    <p>Ver todos</p>
+                    </aside>
+                    <ul>
+                    <li>
+                        <img src='../../../images/garfield.jpg'/>
+                        <a>Odeio acordar cedo</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/sorvete_negresco.jpg'/>
+                        <a>Queria sorvete, mas era feijão</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/dormindo.jpeg'/>
+                        <a>eu durmo na sala de aula</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src='../../../images/banho.png'/>
+                        <a>Eu tomo banho pelado</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/madruga.png'/>
+                        <a>Sr madruga nunca foi vagabundo</a>
+                    </li>
+                    <li>
+                    <img src='../../../images/cerveja.png'/>
+                        <a>A culpa é da cerveja</a>
+                    </li>
+                </ul>
+                </section>
             </section>
         </div>
     )

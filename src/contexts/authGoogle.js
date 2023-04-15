@@ -24,7 +24,7 @@ export default function AuthGoogleProvider ({children}) {
 
     const singInGoogle = () =>{
         signInWithPopup(auth, provider)
-          .then((result) => {
+        .then((result) => {
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
             const user = result.user;

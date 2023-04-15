@@ -33,7 +33,7 @@ export function Login () {
           <article>
             <h2>Seja bem vindo</h2>
             <text>Faça seu login utilizando sua conta do Google</text>
-            <button onClick={handleSignIn}>Login</button>
+            <button onClick={handleSignIn}>Login com Google</button>
           </article>
         </section>
       </div>

@@ -28,6 +28,9 @@
         text-decoration: none;
         color: var(--gray-650);
     }
+    a:hover{
+            color: var(--pink-400)
+    }
     section{
         display: flex;
     }
